@@ -27,6 +27,6 @@
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
-    self.predictionLabel.text = @"Definitely yes";
+    self.predictionLabel.text = @"BAM!";
 }
 @end
