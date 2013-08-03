@@ -46,6 +46,9 @@
                             <constraint firstItem="G4o-MO-MBF" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="o99-0K-y0K"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="predictionLabel" destination="G4o-MO-MBF" id="3w2-y7-Yc1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
