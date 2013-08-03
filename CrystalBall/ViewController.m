@@ -27,6 +27,7 @@
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
-    self.predictionLabel.text = @"BAM!";
+    NSArray *predictions = [[NSArray alloc] initWithObjects:@"BOOM!", @"BAM!", @"POW!", @"BANG!", nil];
+    self.predictionLabel.text = [predictions objectAtIndex:1];
 }
 @end

@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)buttonPressed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
+- (IBAction)buttonPressed:(UIButton *)sender;
 
 @end
