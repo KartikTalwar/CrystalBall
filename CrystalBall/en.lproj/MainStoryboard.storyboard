@@ -22,6 +22,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhY-yY-IaW">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="Jjp-nV-gVu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Predict">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -30,6 +33,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="lDT-2F-ATU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -37,7 +43,6 @@
                             <constraint firstItem="rhY-yY-IaW" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="1Hy-Qv-9Ra"/>
                             <constraint firstAttribute="bottom" secondItem="rhY-yY-IaW" secondAttribute="bottom" constant="179" id="6hC-t6-u46"/>
                             <constraint firstItem="G4o-MO-MBF" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="VuT-2t-j1K"/>
-                            <constraint firstAttribute="trailing" secondItem="rhY-yY-IaW" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="mSx-4K-sxW"/>
                             <constraint firstItem="G4o-MO-MBF" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="o99-0K-y0K"/>
                         </constraints>
                     </view>
@@ -46,14 +51,6 @@
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
