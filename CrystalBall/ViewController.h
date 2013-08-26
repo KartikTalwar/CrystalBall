@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    NSArray *predictions;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
 - (IBAction)buttonPressed:(UIButton *)sender;

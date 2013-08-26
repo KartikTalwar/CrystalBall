@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    predictions = [[NSArray alloc] initWithObjects:@"BOOM!", @"BAM!", @"POW!", @"BANG!", nil];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -27,7 +28,7 @@
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
-    NSArray *predictions = [[NSArray alloc] initWithObjects:@"BOOM!", @"BAM!", @"POW!", @"BANG!", nil];
+
     self.predictionLabel.text = [predictions objectAtIndex:1];
 }
 @end
